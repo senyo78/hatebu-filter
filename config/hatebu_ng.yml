@@ -72,6 +72,11 @@ domains:
   - tocana.jp                              # TOCANA（オカルト）
   # ----- SEOコンテンツファーム系 -----
   - macholog.com                           # マッチョログ
+  # ----- マンガ連載ビューア系 -----
+  - sunday-webry.com                       # サンデーうぇぶり
+  - shonenjumpplus.com                     # 少年ジャンプ+
+  - rookie.shonenjump.com                  # ジャンプルーキー!
+  - comic-days.com                         # コミックDAYS
 
 # NGワード（当面は無効）
 words: []
