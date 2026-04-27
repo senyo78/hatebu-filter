@@ -1,0 +1,80 @@
+# ============================================================
+# 購読するフィード一覧
+# カテゴリホッテントリは10〜15ブクマ以上、総合は20〜30ブクマ以上で
+# 既にはてブ側の足切りがかかっている。これ以上の足切りはしない（取りこぼし防止）
+# ============================================================
+feeds:
+  - url: https://b.hatena.ne.jp/hotentry.rss
+    label: top
+  - url: https://b.hatena.ne.jp/hotentry/it.rss
+    label: it
+  - url: https://b.hatena.ne.jp/hotentry/economics.rss
+    label: economics
+  - url: https://b.hatena.ne.jp/hotentry/social.rss
+    label: social
+  - url: https://b.hatena.ne.jp/hotentry/knowledge.rss
+    label: knowledge
+  - url: https://b.hatena.ne.jp/hotentry/game.rss
+    label: game
+  - url: https://b.hatena.ne.jp/hotentry/life.rss
+    label: life
+
+# ============================================================
+# NGドメイン（部分一致でURLに含まれていたら却下）
+# ============================================================
+domains:
+  # ----- 2ch/5chまとめブログ系 -----
+  - blog.livedoor.jp/dqnplus              # DQN+
+  - blog.livedoor.jp/kinisoku              # 気になるニュース速報
+  - blog.livedoor.jp/itsoku                # IT速報
+  - blog.livedoor.jp/news23vip             # NEWS23VIP
+  - blog.livedoor.jp/nwknews               # ネトウヨ系まとめ
+  - blog.livedoor.jp/insidears             # インサイドアース
+  - blog.livedoor.jp/goldennews            # ゴールデンニュース
+  - blog.livedoor.jp/bluejay01-review      # ブルージェイレビュー
+  - blog.livedoor.jp/chihhylove            # ちひいラブ
+  - blog.esuteru.com                       # はちま起稿
+  - jin115.com                             # オレ的ゲーム速報＠JIN
+  - hamusoku.com                           # ハム速
+  - himasoku.com                           # 暇つぶしニュース
+  - alfalfalfa.com                         # アルファルファモザイク
+  - news4vip.livedoor.biz                  # ニュー速VIPブログ
+  - michaelsan.livedoor.biz                # ミカエル
+  - oryouri.2chblog.jp                     # おーるじゃんる
+  - gahalog.2chblog.jp                     # がはろぐ
+  - i2chmeijin.blog.fc2.com                # 2ch名人
+  - tsuisoku.com                           # ついっぷる速報
+  - warotanikki.com                        # ワロタニッキ
+  - exawarosu.net                          # エアログ
+  - kijosoku.com                           # 鬼女速
+  - matomedane.jp                          # まとめだね
+  - anonymous-post.mobi                    # 匿名速報
+  - onecall2ch.com                         # ワンコール2ch
+  - tozanchannel.blog.jp                   # 登山ちゃんねる
+  - syurabahazard.com                      # 修羅場ハザード
+  - kenmomatome.blog.jp                    # ケンモまとめ
+  - kekkongo                               # 結婚速報系
+  - katasumisokuhou.blog.jp                # 片隅速報
+  - machipatome.publog.jp                  # まちぱとめ
+  - oboega-01.blog.jp                      # おぼえがき
+  - geinoucv.officialblog.jp               # 芸能CV
+  - 3ten5jigen.officialblog.jp             # 三点五次元
+  - bimatome.weblog.to                     # 美まとめ
+  - galapgs.com                            # ガラパゴス
+  - giko-neko.com                          # ギコ猫
+  - kawaiisokuhou.com                      # かわいい速報
+  - pochisoku.net                          # ぽち速
+  - v-classic.com                          # Vクラシック
+  - yaraon-blog.com                        # やらおん！
+  # ----- バイラル/低品質ニュース系 -----
+  - hosyusokuhou.jp                        # 保守速報
+  - netgeek.biz                            # netgeek（フェイクニュース常習）
+  - tocana.jp                              # TOCANA（オカルト）
+  # ----- SEOコンテンツファーム系 -----
+  - macholog.com                           # マッチョログ
+
+# NGワード（当面は無効）
+words: []
+
+# NGユーザー（はてブRSSにブクマユーザー情報は無いので未対応）
+users: []
