@@ -2,7 +2,7 @@ name: hatebu-filter
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "7,17,27,37,47,57 * * * *"
   workflow_dispatch:
 
 permissions:
