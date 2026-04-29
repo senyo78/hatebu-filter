@@ -78,6 +78,7 @@ domains:
   - rookie.shonenjump.com                  # ジャンプルーキー!
   - comic-days.com                         # コミックDAYS
   - yanmaga.jp                             # ヤンマガWeb
+  - tonarinoyj.jp                          # となりのヤングジャンプ
 
 # NGワード（当面は無効）
 words: []
