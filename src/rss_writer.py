@@ -41,7 +41,11 @@ def write_rss(articles: list[dict]) -> None:
         bookmark_count = article.get("bookmark_count", 0)
         fe.title(f"{article['title']} [{bookmark_count} users]")
         fe.link(href=article["url"])
-        fe.description(article.get("description", ""))
+        description = article.get("description", "")
+        imageurl = article.get("imageurl", "")
+        if imageurl:
+            description = f'<p><img src="{imageurl}" alt="" /></p>{description}'
+        fe.description(description)
         fe.pubDate(_parse_pubdate(article.get("published", "")))
         fe.category(term=article.get("category", ""))
 

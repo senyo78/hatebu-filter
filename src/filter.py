@@ -124,6 +124,7 @@ def run() -> None:
                     "bookmark_count": bookmark_count,
                     "category": label,
                     "description": entry.get("summary", ""),
+                    "imageurl": entry.get("hatena_imageurl", "") or "",
                 })
 
     write_rss(accepted)
