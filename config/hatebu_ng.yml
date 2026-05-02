@@ -10,14 +10,6 @@ feeds:
     label: it
   - url: https://b.hatena.ne.jp/hotentry/economics.rss
     label: economics
-  - url: https://b.hatena.ne.jp/hotentry/social.rss
-    label: social
-  - url: https://b.hatena.ne.jp/hotentry/knowledge.rss
-    label: knowledge
-  - url: https://b.hatena.ne.jp/hotentry/game.rss
-    label: game
-  - url: https://b.hatena.ne.jp/hotentry/life.rss
-    label: life
 
 # ============================================================
 # NGドメイン（部分一致でURLに含まれていたら却下）
