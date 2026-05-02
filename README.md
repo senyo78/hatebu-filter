@@ -6,8 +6,8 @@
 
 ```
 ┌─────────────────┐    ┌──────────────────────────────────┐
-│ はてブ RSS (7本) │───>│  GitHub Actions (30分ごと)        │
-│  総合 + 6カテゴリ │    │  python -m src.filter             │
+│ はてブ RSS (3本) │───>│  GitHub Actions (30分ごと)        │
+│  総合 + IT + 経済 │    │  python -m src.filter             │
 └─────────────────┘    │    ↓                              │
                        │  NGドメイン判定                    │
                        │    ├─ 通過 → output/filtered.xml  │

@@ -5,7 +5,7 @@
 ## 要件
 
 ### 機能
-1. 7つのはてブRSS（総合 + カテゴリ別6種）を取得
+1. 3つのはてブRSS（総合 + IT + 経済）を取得
 2. NGドメインリストでフィルタリング（ブクマ数による足切りはしない、取りこぼし防止）
 3. 通過した記事を1本のRSSファイルに統合出力
 4. 却下した記事をJSONL形式でログ保存
@@ -61,14 +61,6 @@ feeds:
     label: it
   - url: https://b.hatena.ne.jp/hotentry/economics.rss
     label: economics
-  - url: https://b.hatena.ne.jp/hotentry/social.rss
-    label: social
-  - url: https://b.hatena.ne.jp/hotentry/knowledge.rss
-    label: knowledge
-  - url: https://b.hatena.ne.jp/hotentry/game.rss
-    label: game
-  - url: https://b.hatena.ne.jp/hotentry/life.rss
-    label: life
 
 # ============================================================
 # NGドメイン（部分一致でURLに含まれていたら却下）
@@ -174,7 +166,7 @@ def get_bookmark_count(entry):
 - 各itemに以下を含める:
   - title（末尾に `[N users]` を付加）
   - link
-  - description
+  - description（`hatena:imageurl` がある場合は先頭に `<img>` を埋め込んでRSSリーダーでサムネ表示）
   - pubDate
   - category（feedのlabel）
 - ファイル書き込みはアトミック（一時ファイルに書いてrename）
@@ -200,7 +192,7 @@ def get_bookmark_count(entry):
 
 ==== カテゴリ別却下数 ====
  top:        25件
- social:     12件
+ it:         12件
 ...
 
 ==== 却下記事一覧（直近24時間、最大100件） ====
