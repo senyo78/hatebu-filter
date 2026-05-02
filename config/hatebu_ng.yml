@@ -71,6 +71,7 @@ domains:
   - comic-days.com                         # コミックDAYS
   - yanmaga.jp                             # ヤンマガWeb
   - tonarinoyj.jp                          # となりのヤングジャンプ
+  - pocket.shonenmagazine.com              # マガポケ
 
 # NGワード（当面は無効）
 words: []
