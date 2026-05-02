@@ -44,8 +44,11 @@ def write_rss(articles: list[dict]) -> None:
         description = article.get("description", "")
         imageurl = article.get("imageurl", "")
         if imageurl:
-            description = f'<p><img src="{imageurl}" alt="" /></p>{description}'
-        fe.description(description)
+            html = f'<p><img src="{imageurl}" alt="" /></p>{description}'
+            fe.content(html, type="CDATA")
+            fe.enclosure(imageurl, "0", "image/jpeg")
+        else:
+            fe.description(description)
         fe.pubDate(_parse_pubdate(article.get("published", "")))
         fe.category(term=article.get("category", ""))
 
