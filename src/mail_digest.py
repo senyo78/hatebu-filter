@@ -140,7 +140,8 @@ def run() -> None:
     entries = load_recent_logs(hours=24)
     now = datetime.now(tz=JST)
     date_str = now.strftime("%Y-%m-%d")
-    subject = f"[hatebu-filter] 却下ダイジェスト {date_str} (却下 {len(entries)}件)"
+    prefix = os.environ.get("DIGEST_SUBJECT_PREFIX", "")
+    subject = f"{prefix}[hatebu-filter] 却下ダイジェスト {date_str} (却下 {len(entries)}件)"
     body = build_body(entries, now)
     send_mail(subject, body)
 
