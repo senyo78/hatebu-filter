@@ -1,5 +1,7 @@
 # hatebu-filter
 
+> **注記 (2026-05-17)**: 本番配信は **OCI VM の cron** に移行済みです。Inoreader 等の購読フィードは VM 配信(Caddy 経由、10 分間隔)を使用しています。本リポジトリの GitHub Pages 版(`https://senyo78.github.io/hatebu-filter/output/filtered.xml`)は **ロールバック用に残した保険系統** で、GitHub Actions は無効化済みのため出力は更新されません(凍結状態)。以下の手順書は GitHub Actions 時代の元来の構成説明として残しています。
+
 はてなブックマークのホッテントリRSSをNGドメインでフィルタリングし、GitHub Pagesでクリーンなフィードを配信するシステム。却下ログを1日1回メールでダイジェスト送信します。
 
 ## 仕組み
