@@ -23,6 +23,7 @@ domains:
   - yanmaga.jp                             # ヤンマガWeb
   - tonarinoyj.jp                          # となりのヤングジャンプ
   - pocket.shonenmagazine.com              # マガポケ
+  - ganganonline.com                       # ガンガンONLINE
 
 # NGワード（当面は無効）
 words: []
