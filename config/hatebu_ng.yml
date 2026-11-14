@@ -24,6 +24,7 @@ domains:
   - tonarinoyj.jp                          # となりのヤングジャンプ
   - pocket.shonenmagazine.com              # マガポケ
   - ganganonline.com                       # ガンガンONLINE
+  - comic-fuz.com                          # COMIC FUZ
 
 # NGワード（当面は無効）
 words: []
