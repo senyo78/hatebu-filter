@@ -25,6 +25,7 @@ domains:
   - pocket.shonenmagazine.com              # マガポケ
   - ganganonline.com                       # ガンガンONLINE
   - comic-fuz.com                          # COMIC FUZ
+  - comic-ogyaaa.com
 
 # NGワード（当面は無効）
 words: []
