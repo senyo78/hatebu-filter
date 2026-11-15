@@ -26,6 +26,7 @@ domains:
   - ganganonline.com                       # ガンガンONLINE
   - comic-fuz.com                          # COMIC FUZ
   - comic-ogyaaa.com
+  - championcross.jp
 
 # NGワード（当面は無効）
 words: []
